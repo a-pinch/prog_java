@@ -1,0 +1,13 @@
+roles:
+Gorodnichij
+Ammos Fedorovich
+Artemij Filippovich
+Luka Lukich
+textLines:
+Gorodnichij: YA Gorodnichij priglasil vas, gospoda, s tem, chtoby soobshchit' vam prenepriyatnoe izvestie: k nam edet revizor.
+Ammos Fedorovich: Kak revizor?
+Artemij Filippovich: Kak revizor?
+Gorodnichij: Revizor iz Peterburga, inkognito. I eshche s sekretnym predpisan'em.
+Ammos Fedorovich: Vot te na!
+Artemij Filippovich: Vot ne bylo zaboty, tak podaj!
+Luka Lukich: Gospodi bozhe! Artemij Filippovich: eshche i s sekretnym predpisan'em!
