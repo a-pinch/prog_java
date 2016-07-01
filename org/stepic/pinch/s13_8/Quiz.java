@@ -1,3 +1,5 @@
+package stepic.pinch.s13_8;
+
 import java.security.MessageDigest;
 
 public class Quiz {

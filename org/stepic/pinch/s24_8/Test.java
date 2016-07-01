@@ -1,3 +1,5 @@
+package stepic.pinch.s24_8;
+
 import java.math.BigInteger;
 
 public class Test{

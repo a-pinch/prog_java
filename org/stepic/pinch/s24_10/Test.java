@@ -1,3 +1,5 @@
+package stepic.pinch.s24_10;
+
 import java.io.File;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,7 +8,7 @@ import java.util.Arrays;
 
 public class Test{
     public static void main(String[] args) throws Exception{
-        File f = new File("test.txt");
+        File f = new File("./org/stepic/pinch/s24_10/test.txt");
         BufferedReader br = new BufferedReader(new FileReader(f));
         String l = null;
         ArrayList<String> roles = new ArrayList<String>();

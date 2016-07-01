@@ -1,3 +1,5 @@
+package stepic.pinch.s24_9;
+
 import java.util.Arrays;
 
 public class Test{

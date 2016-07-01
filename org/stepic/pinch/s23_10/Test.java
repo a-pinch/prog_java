@@ -1,3 +1,5 @@
+package stepic.pinch.s23_10;
+
 public class Test{
 
 	public static void main(String[] args){
