@@ -1,4 +1,4 @@
-package stepic.pinch.s35_7;
+package org.stepic.pinch.s35_7;
 
 import java.util.function.DoubleUnaryOperator;
 

@@ -1,4 +1,4 @@
-package stepic.pinch.s24_8;
+package org.stepic.pinch.s24_8;
 
 import java.math.BigInteger;
 

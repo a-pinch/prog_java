@@ -1,4 +1,4 @@
-package stepic.pinch.s23_10;
+package org.stepic.pinch.s23_10;
 
 public class Test{
 

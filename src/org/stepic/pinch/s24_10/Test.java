@@ -1,4 +1,4 @@
-package stepic.pinch.s24_10;
+package org.stepic.pinch.s24_10;
 
 import java.io.File;
 import java.io.BufferedReader;

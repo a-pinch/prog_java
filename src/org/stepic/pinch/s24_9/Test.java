@@ -1,4 +1,4 @@
-package stepic.pinch.s24_9;
+package org.stepic.pinch.s24_9;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package stepic.pinch.s13_8;
+package org.stepic.pinch.s13_8;
 
 import java.security.MessageDigest;
 

@@ -1,4 +1,4 @@
-package stepic.pinch.s35_8;
+package org.stepic.pinch.s35_8;
 
 import java.util.Arrays;
 

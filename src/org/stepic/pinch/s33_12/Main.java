@@ -1,4 +1,4 @@
-package stepic.pinch.s33_12;
+package org.stepic.pinch.s33_12;
 
 public class Main {
 

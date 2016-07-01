@@ -1,4 +1,4 @@
-package stepic.pinch.s35_9;
+package org.stepic.pinch.s35_9;
 
 abstract class KeywordAnalyzer implements TextAnalyzer {
     protected abstract String[] getKeywords();
