@@ -1,11 +1,11 @@
 package org.stepic.pinch.s64_14;
 
 import java.util.*;
-import java.util.stream.Collectors;
+import java.util.function.Consumer;
 
 public class Main {
 
-    public static class BaseMessage<T>{
+    public static abstract class BaseMessage<T>{
         private final String from;
         private final String to;
         private final T content;
@@ -29,29 +29,29 @@ public class Main {
         }
     }
 
-    public static class MailMessage<String> extends BaseMessage{
-        public MailMessage(java.lang.String from, java.lang.String to, String content) {
+    public static class MailMessage extends BaseMessage<String>{
+        public MailMessage(String from, String to, String content) {
             super(from, to, content);
         }
     }
 
-    public static class Salary<Integer> extends BaseMessage{
+    public static class Salary extends BaseMessage<Integer>{
         public Salary(String from, String to, Integer content) {
             super(from, to, content);
         }
     }
 
-    public static class MailService<T>{
+    public static class MailService<T> implements Consumer<BaseMessage<T>>{
 
         private List<BaseMessage<T>> mails = new ArrayList<>();
 
-        public void process(BaseMessage<T> mail){
-            mails.add(mail);
+        @Override
+        public void accept(BaseMessage<T> o) {
+            mails.add(o);
         }
 
         public Map<String, List<T>> getMailBox(){
-            Map<String, List<String>> res = new HashMap<>();
-            return mails.stream().collect(Collectors.groupingBy(m->m.getTo(), Collectors.toList()));
+            return mails.stream().collect(java.util.stream.Collectors.groupingBy(BaseMessage::getTo, java.util.stream.Collectors.mapping(BaseMessage::getContent,java.util.stream.Collectors.toList())));
         }
 
     }
