@@ -51,7 +51,14 @@ public class Main {
         }
 
         public Map<String, List<T>> getMailBox(){
-            return mails.stream().collect(java.util.stream.Collectors.groupingBy(BaseMessage::getTo, java.util.stream.Collectors.mapping(BaseMessage::getContent,java.util.stream.Collectors.toList())));
+            Map res = new HashMap<String, List<T>>(){
+                @Override
+                public List<T> get(Object key) {
+                    return keySet().contains(key) ? super.get(key) : Collections.EMPTY_LIST;
+                }
+            };
+            res.putAll(mails.stream().collect(java.util.stream.Collectors.groupingBy(BaseMessage::getTo, java.util.stream.Collectors.mapping(BaseMessage::getContent,java.util.stream.Collectors.toList()))));
+            return res;
         }
 
     }
